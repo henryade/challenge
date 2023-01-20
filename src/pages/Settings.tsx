@@ -90,7 +90,7 @@ const Settings = () => {
             <h5>Contact email</h5>
             <p className='text-gray-500'>Where should invoices be sent?</p>
           </div>
-          <div className='w-full md:w-8/12 flex-1'>
+          <div className='w-full lg:w-full flex-1'>
             <RadioInput labelPlacement='after' name='radio' type='radio' id={"radio1"} labelText={<div>
               <p className='text-gray-700'>Send to my account email</p>
               <p className='text-gray-500'>olivia@untitledui.com</p>
@@ -107,7 +107,7 @@ const Settings = () => {
             <h5>Card details</h5>
             <p className='text-gray-500'>Select default payment method.</p>
           </div>
-          <div className='w-full md:w-8/12 flex-1'>
+          <div className='w-full lg:w-full flex-1'>
             <PaymentCard Logo={VisaLogo} cardType='Visa' expiryDate='06/24' endingNumbers='1234' isDefault={defaultCard === 'Visa'} handleClick={() => { setDefaultCard('Visa') }} />
             <PaymentCard Logo={MastercardLogo} cardType='MasterCard' expiryDate='06/24' endingNumbers='1234' isDefault={defaultCard === 'MasterCard'} handleClick={() => { setDefaultCard("MasterCard") }} />
 

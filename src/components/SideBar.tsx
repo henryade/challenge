@@ -8,7 +8,7 @@ import { Card, Logout } from 'components'
 const SideBar: FC<{ width?: string }> = ({ width = "w-3/12 min-w-[200px] max-w-[279px]" }) => {
   const { value, handleChange } = useSearch([], []);
   return (
-    <div className={`h-full flex-none px-6 py-2 ${width}`}>
+    <div className={`h-screen flex flex-col justify-between flex-none px-6 py-2 ${width}`}>
       <MainLogo />
       <Search value={value} handleChange={handleChange} />
       {
